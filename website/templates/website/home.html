@@ -1,13 +1,19 @@
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name=
-"viewport" content=
-"width=device-width, initial-scale=1.0">
-<title>Meeting planer: home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% extends "base.html" %}
+
+    {% block title %}HOME{% endblock %}
 </head>
+
 <body>
-<h2>Meeting planner application from Tek-up</h2>
-<h3>Lite des réunions</h3>
+    {% block content %}
+    <h2>Welcome to the meeting planner</h2>
+    <p>there are currently {{nbre_meeting}} meetings</p>
+
+    {% endblock %}
 </body>
+
 </html>

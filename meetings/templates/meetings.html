@@ -1,0 +1,16 @@
+<div class="meetings-section">
+
+
+    <h2>Meetings</h2>
+    <ul>
+        {% for meeting in meetings %}
+            <li>
+            <a href="{% url 'detail' meeting.id %}">
+                {{ meeting.title }}</a>
+              <button><a href="{% url 'delete' meeting.id %}">Delete</a></button>
+            </li>
+        {% empty %}
+            <li>No meetings available.</li>
+        {% endfor %}
+    </ul>
+</div>

@@ -15,9 +15,6 @@ def __str__(self):
 
 
 
-
-
-
 class Room(models.Model):
  name = models.CharField(max_length=50)
  floor = models.IntegerField()
